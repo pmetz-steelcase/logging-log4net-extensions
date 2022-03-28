@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Log4Net.Extensions\Log4Net.Extensions.csproj" />
+        <ProjectReference Include="..\Log4Net.AppenderExtensions\Log4Net.AppenderExtensions.csproj" />
     </ItemGroup>
 
     <ItemGroup>
