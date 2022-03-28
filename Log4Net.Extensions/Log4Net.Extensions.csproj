@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Library</OutputType>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <RootNamespace>Log4Net.Extensions</RootNamespace>
+        <DebugType>full</DebugType>
+        <ProduceReferenceAssembly>True</ProduceReferenceAssembly>
+        <SignAssembly>True</SignAssembly>
+        <AssemblyOriginatorKeyFile>log4net.snk</AssemblyOriginatorKeyFile>
+        <LangVersion>8.0</LangVersion>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Authors>Peter Metz</Authors>
+        <Description>Log4Net RollingFile extesion for removing old files created by Date per day roll type</Description>
+        <Copyright>Peter Metz</Copyright>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+      <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+      <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    </PropertyGroup>
+
+</Project>
