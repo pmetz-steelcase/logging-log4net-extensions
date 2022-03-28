@@ -13,14 +13,34 @@
         <Authors>Peter Metz</Authors>
         <Description>Log4Net RollingFile extesion for removing old files created by Date per day roll type</Description>
         <Copyright>Peter Metz</Copyright>
+        <ApplicationIcon>log4nettrash-favicon.ico</ApplicationIcon>
+        <Nullable>disable</Nullable>
+        <PackageIcon>log4nettrash.png</PackageIcon>
+        <RepositoryType>https://github.com/pmetz-steelcase/logging-log4net-extensions</RepositoryType>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-      <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+        <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-      <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+        <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
     </PropertyGroup>
+
+    <ItemGroup>
+        <Content Include="log4nettrash-favicon.ico" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="log4net" Version="2.0.14" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Update="log4nettrash.png">
+            <Pack>True</Pack>
+            <PackagePath>\</PackagePath>
+        </None>
+    </ItemGroup>
 
 </Project>
