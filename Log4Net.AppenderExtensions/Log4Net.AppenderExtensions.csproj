@@ -16,8 +16,9 @@
         <ApplicationIcon>log4nettrash-favicon.ico</ApplicationIcon>
         <Nullable>disable</Nullable>
         <PackageIcon>log4nettrash.png</PackageIcon>
-        <RepositoryType>https://github.com/pmetz-steelcase/logging-log4net-extensions</RepositoryType>
+        <RepositoryType>git</RepositoryType>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/pmetz-steelcase/logging-log4net-extensions</RepositoryUrl>
     </PropertyGroup>
 
     <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
